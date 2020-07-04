@@ -1,0 +1,7 @@
+artemis:
+  broker-url: (tcp://localhost:61617,tcp://localhost:61618)?ha=true&retryInterval=1000&retryIntervalMultiplier=1.0&reconnectAttempts=10&loadBalancingPolicyClassName=org.apache.activemq.artemis.api.core.client.loadbalance.RoundRobinConnectionLoadBalancingPolicy
+
+
+logging:
+  level:
+    root: INFO

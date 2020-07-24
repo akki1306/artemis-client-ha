@@ -36,7 +36,7 @@ public class SpringJmsApplication {
   public void onConstruct() throws Exception {
     server();
     for (int i = 0; i < 25; i++) {
-      Thread.sleep(1000);
+      Thread.sleep(2000);
       sender.send("Hello World " + i);
     }
   }

@@ -16,7 +16,6 @@ public class Sender {
 
   public void send(String message) throws Exception {
     LOGGER.error("sending message='{}'", message);
-      jmsTemplate.convertAndSend("helloworld.q", message);
-
+    jmsTemplate.convertAndSend("helloworld.q", message);
   }
 }
